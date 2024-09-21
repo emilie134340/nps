@@ -88,6 +88,120 @@
 
 /* Global styles */
 
+/* Global Navbar */
+
+.global-header {
+  background-color: black;
+  color: white;
+  display: flex; /* Why flex here? Like what exactly is that doing? */
+  justify-content: space-between;
+  fill: white; 
+}
+
+.global-header a:link,
+.global-header a:visited,
+#park-header a:link,
+#park-header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.global-header .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.global-header__right .search-icon {
+  padding: 0 1rem;
+  margin-top: 6px;
+}
+
+.global-header__right button {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid grey;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 1.2em;
+}
+
+/* Hero Banner */
+
+.hero-banner {
+  display: grid; /* REVIEW GRID */
+  grid-template-columns: 1fr;
+}
+
+.hero-banner > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.hero-banner__content {
+  color: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 1em;
+  display: flex; /* Why? */
+}
+
+.hero-banner__title {
+  font-size: 1.875em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 27px;
+}
+
+.hero-banner_subtitle {
+  display: flex;
+  flex-direction: column; /* COLUMNS NOT SPLIT?? find out why*/
+  font-size: .8125rem;
+  line-height: 1rem;
+}
+
+/* Park Nav */
+
+.park-nav > ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-color: black;
+  font-size: 0.8125rem;
+}
+
+.park-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+.park-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8em 2em;
+}
+
+.park-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -167,6 +281,7 @@ a:hover {
   overflow: hidden;
 }
 
+/* Once you set the background colors set you can get rid of this */
 svg {
   background-color: var(--bs-black);
   fill: white;
