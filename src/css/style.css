@@ -124,7 +124,7 @@
 .global-header__right button {
   background-color: transparent;
   border: none;
-  border-left: 1px solid grey;
+  border-left: 1px solid var(--bs-grey-5);
   display: flex;
   align-items: center;
   color: white;
@@ -181,7 +181,7 @@
   display: flex;
   margin: 0;
   justify-content: center;
-  background-color: black;
+  background-color: var(--bs-black);
   font-size: 0.8125rem;
 }
 
