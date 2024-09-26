@@ -1,5 +1,4 @@
-const cookies = {
-    "recipes" :
+const cookies =
     [
         {
         "recipe_name": "Chocolate Chip Cookies",
@@ -166,8 +165,7 @@ const cookies = {
             "Bake 8-10 minutes at 350 F"
         ]
         }
-    ]
-}    
+    ] 
 
 export function getRecipes() {
     return cookies;

@@ -8,8 +8,8 @@ function setCookieInfo(data){
     const container = document.querySelector('.recipes');
     // multiple items in an array to loop through all of them we use the .map() method.
     // you can only use .map() when you're going through an array
-    const html = data.recipes.map(recipeTemplate);
-    container.innerHTML = html.join('');
+    const html = data.map(recipeTemplate);
+    container.innerHTML = html.join(''); // this just gets rid of the comma
 }
 
 function recipeTemplate(info) {
@@ -20,12 +20,11 @@ function recipeTemplate(info) {
     `
 }
 
+function getType(data) {
+   const tradContainer = document.querySelector('.traditional');
+   const trad = data.find((data)=> data.type === 'traditional');
+   tradContainer.innerHTML = trad.recipe_name;
+}
+
 setCookieInfo(cookieData);
-
-// function getType(data) {
-//    const tradContainer = document.querySelector('.traditional');
-//    const trad = data.recipes.find((data)=> data.type === 'traditional');
-//    tradContainer.innerHTML = trad.type;
-// }
-
-// getType(cookieData);
+getType(cookieData);
