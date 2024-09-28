@@ -15,8 +15,7 @@ export function mediaCardTemplate(info) {
       <h3 class="media-card__title">${info.name}</h3>
       </a>
      <p>${info.description}</p>
-       </div>
-       `;
+       </div>`;
 }
 
 // step 5
@@ -29,10 +28,10 @@ function getVoicePhone(numbers) {
 // footer template (sans mailing address)
 export function footerTemplate(info) {
     const voice = getVoicePhone(info.contacts.phoneNumbers);
+    
     return `<section class="contact">
     <h3>Contact Info</h3>
     <h4>Phone:</h4>
     <p>${voice}</p>
-  </section>
-    `;
+  </section>`;
 }
