@@ -86,12 +86,11 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-/* Global styles */
 
 /* Global Navbar */
 
 .global-header {
-  background-color: black;
+  background-color: var(--bs-black);
   color: white;
   display: flex; /* Why flex here? Like what exactly is that doing? */
   justify-content: space-between;
@@ -107,8 +106,8 @@
 }
 
 .global-header .icon {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .global-header__right {
@@ -152,7 +151,7 @@
   color: white;
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
   gap: 1em;
   padding: 0.5em 1em;
@@ -170,7 +169,6 @@
   display: flex;
   flex-direction: column; /* COLUMNS NOT SPLIT?? find out why*/
   font-size: .8125rem;
-  line-height: 1rem;
 }
 
 /* Park Nav */
@@ -202,6 +200,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Global styles */
 * {
   box-sizing: border-box;
 }
@@ -212,7 +211,8 @@ img {
 body {
   font-family: var(--bs-body-font-family);
   font-size: 18px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 a:link,
@@ -316,7 +316,7 @@ a:hover {
   color: var(--bs-grey-2);
 }
 
-/* footer styles */
+/* Footer styles */
 
 .park-footer {
   background-image: url("../images/topo_pattern.png");
@@ -362,8 +362,8 @@ a:hover {
   overflow: hidden;
 }
 
-/* Once you set the background colors set you can get rid of this */
+/* Once you set the background colors set you can get rid of this
 svg {
   background-color: var(--bs-black);
   fill: white;
-}
+} */
