@@ -1,5 +1,5 @@
 setTimeout(function() {
-    console.log('async')
+    console.log('async');
 }, 1000); // 1 second
 
 console.log('synchronous'); // this will show up first because the other one is timeing out
