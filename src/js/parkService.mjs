@@ -180,7 +180,7 @@ export const parkInfoLinks = [
 ];
 
 // new export function from nps 3
-async function getJson(url) {
+export async function getJson(url) {
   const options = {
     method: "GET",
     headers: {

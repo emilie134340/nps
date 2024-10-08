@@ -3,7 +3,7 @@ import setHeaderFooter from "./setHeaderFooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
 
 // 02 step 1 set full park name and description from our data
-function setParkIntro(data) {
+function setParkIntro(parkData) {
   const introEl = document.querySelector(".intro");
   introEl.innerHTML = `<h1>${parkData.fullName}</h1>
   <p>${parkData.description}</p>`;
