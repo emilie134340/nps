@@ -169,7 +169,10 @@
   display: flex;
   flex-direction: column; /* COLUMNS NOT SPLIT?? find out why*/
   font-size: .8125rem;
+  padding: 0px;
 }
+
+
 
 /* Park Nav */
 
