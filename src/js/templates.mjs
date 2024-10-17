@@ -74,10 +74,11 @@ export function alertTemplate(alert) {
 // visitors center template
 export function visitorCenterTemplate(center) {
   return `<li class="visitor">
-  <h4>${center.name}</h4>
+  <div>
+  <h3>${center.name}</h3>
   <p>${center.description}</p>
   <p>${center.directionsInfo}</p>
-  </li>`;
+  </div></li>`;
 }
 // activities template
 export function activityListTemplate(activities) {

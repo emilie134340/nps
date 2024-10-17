@@ -211,12 +211,12 @@ export async function getParkData() {
 }
 
 // nps 4
-export async function getParkAlerts(code) {
-  const parkData = await getJson(`alerts?parkCode=${code}`);
+export async function getParkAlerts(parkCode) {
+  const parkData = await getJson(`alerts?parkCode=${parkCode}`);
   return parkData.data;
 }
 
-export async function getParkVisitorCenters(code) {
-  const parkData = await getJson(`visitorcenters?parkCode=${code}`);
+export async function getVisitorCenterData(parkCode) {
+  const parkData = await getJson(`visitorcenters?parkCode=${parkCode}`);
   return parkData.data;
 }
