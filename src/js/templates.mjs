@@ -36,23 +36,6 @@ export function footerTemplate(info) {
   </section>`;
 }
 
-// alerts template
-// export function alertTemplate(alert) {
-//   let alertCategory = "";
-//   switch (alert.catergory) {
-//     case "Park Closure":
-//       alertCategory = "closure";
-//       break;
-//     default:
-//       alertCategory = alert.catergory.toLowerCase();
-//   }
-//   return `<li class = "alert">
-//   <svg class="icon" focusable="false" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/sprite.symbol.svg#alert-${alertCategory}"></use></svg>
-//   <span>
-//     <h3 class="alert-${alertCategory}">${alert.title}</h3>
-//     <p>${alert.description}</p>
-//   </span></li>`;
-// }
 export function alertTemplate(alert) {
   let alertType = "";
   // most of the alerts are one word and line up with the icons nicely. "Park Closure" is the exception
@@ -73,12 +56,11 @@ export function alertTemplate(alert) {
 
 // visitors center template
 export function visitorCenterTemplate(center) {
-  return `<li class="visitor">
-  <div>
+  return `<li class="visitor-center">
   <h3>${center.name}</h3>
   <p>${center.description}</p>
   <p>${center.directionsInfo}</p>
-  </div></li>`;
+  </li>`;
 }
 // activities template
 export function activityListTemplate(activities) {

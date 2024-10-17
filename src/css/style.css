@@ -134,6 +134,20 @@
 }
 
 /* Visitor Center */
+.visitor > details > ul {
+  list-style: none;
+  padding: 0;
+}
+.visitor > details li {
+  border-bottom: 1px solid var(--bs-grey-3);
+}
+
+/* Details styles*/
+details {
+  padding: 1rem;
+  border: 1px solid var(--bs-grey-3);
+  border-radius: 5px;
+}
 
 /* Global Navbar */
 
