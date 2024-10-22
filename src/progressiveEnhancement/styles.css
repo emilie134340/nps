@@ -1,0 +1,149 @@
+/* Body Styling */
+body {
+    background-color: #e8f5e9; /* Light green for a calming, nature feel */
+    color: #2e7d32; /* Dark green text for readability */
+    font-family: 'Verdana', sans-serif; /* Natural, clear font family */
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #66bb6a; /* Vibrant green for header */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Headings */
+h2 {
+    color: #1b5e20; /* Deep green for headings */
+    border-bottom: 2px solid #c8e6c9; /* Light green border */
+    padding-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    display: grid;
+    gap: 20px;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 40px;
+}
+
+li {
+    max-width: 70ch; /* Limit text width for better readability */
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #2e7d32; /* Highlighted text in a strong green */
+}
+
+/* Paragraphs */
+p {
+    max-width: 70ch;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #c8e6c9; /* Light green border */
+}
+
+/* Figures and Captions */
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figcaption {
+    color: #558b2f; /* Softer green for captions */
+    font-size: 14px;
+}
+
+/* Plant Section */
+.plant-section__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;
+    font-size: 16px;
+}
+
+button {
+    background-color: #66bb6a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.form-error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #388e3c;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Accessibility: Ensure good color contrast */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #8bc34a; /* Accessible focus indicator */
+}

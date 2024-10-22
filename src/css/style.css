@@ -273,6 +273,8 @@ img {
   max-width: 100%;
 }
 
+/* ALWAYS STYLE FOR MOBILE FIRST */
+
 body {
   font-family: var(--bs-body-font-family);
   font-size: 18px;
