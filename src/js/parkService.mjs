@@ -220,3 +220,9 @@ export async function getVisitorCenterData(parkCode) {
   const parkData = await getJson(`visitorcenters?parkCode=${parkCode}`);
   return parkData.data;
 }
+
+// visitors center details template
+export async function getParkVisitorCenterDetails(id) {
+  const parkData = await getJson(`visitorcenters?id=${id}`);
+  return parkData.data[0];
+}
