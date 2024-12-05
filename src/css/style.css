@@ -584,7 +584,7 @@ a:hover {
 }
 
 /* Once you set the background colors set you can get rid of this */
-svg {
+a.search-icon {
   background-color: var(--bs-black);
   fill: white;
 }

@@ -1,3 +1,5 @@
+import spritePath from '../images/sprite.symbol.svg';
+
 // hero banner template
 export function parkInfoTemplate(info) {
     return `<a href="/" class="hero-banner__title">${info.name}</a>
@@ -36,8 +38,6 @@ export function footerTemplate(info) {
   </section>`;
 }
 
-import spritePath from '../images/sprite.symbol.svg';
-
 export function alertTemplate(alert) {
   let alertType = "";
   // most of the alerts are one word and line up with the icons nicely. "Park Closure" is the exception
@@ -74,10 +74,9 @@ export function activityListTemplate(activities) {
 export function iconTemplate(iconId) {
   return `<svg class="icon" role="presentation" focusable="false">
   <use
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  xlink:href="/images/sprite.symbol.svg#${iconId}"
-  ></use>
-  </svg>`;
+    href="${spritePath}#${iconId}"
+   ></use>
+</svg>`;;
   }
   
   export function vcDetailsTemplate(elementId, summaryText, iconId, content) {
