@@ -1,6 +1,6 @@
 import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
-import { mediaCardTemplate } from "./templates.mjs";
+import { mediaCardTemplate, vcImageTemplate } from "./templates.mjs";
 
 // 02 step 1 set full park name and description from our data
 function setParkIntro(parkData) {

@@ -155,6 +155,7 @@ details {
   background-color: var(--bs-black);
   color: white;
   display: grid; 
+  grid-template-columns: auto 200px;
   justify-content: space-between;
   fill: white; 
 }
@@ -582,7 +583,7 @@ a:hover {
   overflow: hidden;
 }
 
-Once you set the background colors set you can get rid of this
+/* Once you set the background colors set you can get rid of this */
 svg {
   background-color: var(--bs-black);
   fill: white;
@@ -641,7 +642,7 @@ svg {
 }
 
 .vc-details-list {
-  border: 1em;
+  /* border: 1em; */
   padding: 1em;
 }
 
